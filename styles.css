@@ -162,4 +162,108 @@
     padding: 0.375rem 0.75rem;
     font-size: 0.875rem;
   }
+
+  /* Adjust container padding */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Adjust section spacing */
+  section {
+    padding: 2rem 1rem;
+  }
+
+  /* Make headings more readable on mobile */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  /* Optimize timeline for mobile */
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::after {
+    left: -3px;
+    width: 8px;
+    height: 8px;
+  }
+
+  /* Adjust card layouts */
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  /* Optimize skill badges layout */
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+  }
+
+  /* Improve button touch targets */
+  .custom-button {
+    padding: 0.75rem 1.5rem;
+    min-height: 44px;
+  }
+}
+
+/* Additional breakpoint for very small devices */
+@media (max-width: 480px) {
+  /* Further reduce font sizes */
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+  }
+
+  /* Adjust spacing */
+  section {
+    padding: 1.5rem 0.75rem;
+  }
+
+  /* Optimize skill badges for very small screens */
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .skill-badge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  /* Improve navigation for mobile */
+  nav {
+    padding: 0.5rem;
+  }
+
+  /* Optimize contact form for mobile */
+  input, textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+/* Fix for iOS momentum scrolling */
+.overflow-auto {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent text size adjustment on orientation change */
+html {
+  -webkit-text-size-adjust: 100%;
 } 
