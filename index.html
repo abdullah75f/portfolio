@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullah Farid - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-inter bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 transition-colors duration-300">
+  <!-- Navigation -->
+  <nav class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-md shadow-lg fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-primary-600 dark:text-primary-400">Abdullah Farid</h1>
+      <div class="flex items-center space-x-4">
+        <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">About</a>
+        <a href="#skills" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Skills</a>
+        <a href="#experience" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Experience</a>
+        <a href="#education" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Education</a>
+        <a href="#interests" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Interests</a>
+        <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contact</a>
+        <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors">
+          <svg class="w-5 h-5 text-gray-600 dark:text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+            <path id="sun" class="block dark:hidden" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4.586 2.414a1 1 0 011.414 1.414l-.707.707a1 1 0 01-1.414-1.414l.707-.707zM3 10a1 1 0 011-1h1a1 1 0 110 2H4a1 1 0 01-1-1zm12 0a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zm-1.414 4.586a1 1 0 011.414-1.414l.707.707a1 1 0 01-1.414 1.414l-.707-.707zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zm-4.586-2.414a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414l-.707.707zM10 6a4 4 0 100 8 4 4 0 000-8z"/>
+            <path id="moon" class="hidden dark:block" d="M12.458 3.458a6 6 0 00-7.5 7.5c.33.66.792 1.248 1.374 1.732A7 7 0 0110 4a7 7 0 012.458-.542z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white">
+    <div class="text-center max-w-4xl mx-auto px-4 animate-fade-in">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4">Abdullah Farid</h1>
+      <p class="text-xl md:text-2xl mb-6 text-primary-100">Computer Engineer | Software Developer | AI Enthusiast</p>
+      <div class="space-x-4">
+        <a href="#contact" class="inline-block bg-white text-primary-600 font-semibold py-2 px-6 rounded-full hover:bg-primary-50 transition hover-scale">Get in Touch</a>
+        <a href="Abdullah-Farid-cvResume.pdf" download class="inline-block bg-transparent border-2 border-white text-white font-semibold py-2 px-6 rounded-full hover:bg-white hover:text-primary-600 transition hover-scale">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 max-w-5xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-8 text-center">About Me</h2>
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in">
+      <p class="text-lg text-gray-700 dark:text-gray-300">
+        I am an Electrical and Computer Engineering student at Addis Ababa University, specializing in Computer Engineering. My expertise spans software development, hardware integration, IoT, and real-time systems. With hands-on experience in AI and machine learning projects, I focus on delivering practical solutions. I am detail-oriented, reliable, and excel in both independent and collaborative settings.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-8 text-center">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in hover-scale">
+          <h3 class="text-xl font-semibold text-primary-600 dark:text-primary-400 mb-2">Languages & Frameworks</h3>
+          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+            <li>Python</li>
+            <li>Bash</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>ReactJS</li>
+            <li>NodeJS</li>
+            <li>NestJS</li>
+            <li>React Native</li>
+            <li>NextJS</li>
+          </ul>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in hover-scale">
+          <h3 class="text-xl font-semibold text-primary-600 dark:text-primary-400 mb-2">Machine Learning</h3>
+          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+            <li>ML Ops</li>
+            <li>Deep Learning</li>
+            <li>NLP</li>
+            <li>Dimensionality Reduction (PCA)</li>
+          </ul>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in hover-scale">
+          <h3 class="text-xl font-semibold text-primary-600 dark:text-primary-400 mb-2">Architecture & Database</h3>
+          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+            <li>RESTful APIs</li>
+            <li>MongoDB</li>
+            <li>Prisma</li>
+            <li>TypeORM</li>
+            <li>Sequelize</li>
+            <li>Drizzle</li>
+          </ul>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in hover-scale">
+          <h3 class="text-xl font-semibold text-primary-600 dark:text-primary-400 mb-2">Tools & Platforms</h3>
+          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+            <li>Git</li>
+            <li>Linux</li>
+            <li>GitHub</li>
+            <li>Supabase</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in hover-scale">
+          <h3 class="text-xl font-semibold text-primary-600 dark:text-primary-400 mb-2">Electrical Design Software</h3>
+          <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+            <li>Proteus</li>
+            <li>Multisim</li>
+            <li>MATLAB</li>
+            <li>Arduino</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-20 max-w-5xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-8 text-center">Professional Experience</h2>
+    <div class="space-y-6">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in hover-scale">
+        <h3 class="text-xl font-semibold text-primary-600 dark:text-primary-400">AI Engineer and Researcher, icogLabs</h3>
+        <p class="text-gray-600 dark:text-gray-400">Jan 2025 - Present | Addis Ababa, Ethiopia</p>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mt-2">
+          <li>Contributing to the OpenCog AGI research initiative, focusing on the MOSES algorithm for evolving LISP-like programs for symbolic reasoning tasks.</li>
+          <li>Implemented and tested program evolution pipelines, enhancing accuracy and performance on benchmark AI problems.</li>
+          <li>Collaborated with interdisciplinary AI researchers and developers to prototype machine reasoning architectures.</li>
+        </ul>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in hover-scale">
+        <h3 class="text-xl font-semibold text-primary-600 dark:text-primary-400">Back-End Developer, Perago Information Systems PLC</h3>
+        <p class="text-gray-600 dark:text-gray-400">Jan 2023 - Jan 2024 | Addis Ababa, Ethiopia</p>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mt-2">
+          <li>Developed scalable backend systems using NestJS to support enterprise-grade software products.</li>
+          <li>Participated in Agile development processes, collaborating with UI/UX teams and QA testers for high-quality product delivery.</li>
+          <li>Enhanced system performance by optimizing database queries and implementing caching strategies.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-20 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-8 text-center">Education</h2>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in hover-scale">
+        <h3 class="text-xl font-semibold text-primary-600 dark:text-primary-400">Electrical and Computer Engineering, Addis Ababa University</h3>
+        <p class="text-gray-600 dark:text-gray-400">May 2021 - Jun 2025 | Addis Ababa, Ethiopia</p>
+        <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 mt-2">
+          <li>Coursework: Computer Programming with Python, Object-Oriented Programming with Java, Statistics & Applications, Computer and Network Security, Database Systems</li>
+          <li>Top 10 university in Africa</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interests Section -->
+  <section id="interests" class="py-20 max-w-5xl mx-auto px-4">
+    <h2 class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-8 text-center">Interests</h2>
+    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in">
+      <ul class="list-disc list-inside text-gray-700 dark:text-gray-300">
+        <li>Open-source AI development</li>
+        <li>Edge machine learning</li>
+        <li>Low-resource NLP</li>
+        <li>Mentoring tech communities</li>
+        <li>Real-time systems innovations</li>
+        <li>Web technologies and full-stack development</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-primary-600 dark:text-primary-400 mb-8 text-center">Contact</h2>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg animate-fade-in text-center">
+        <p class="text-gray-700 dark:text-gray-300">Email: <a href="mailto:abdullah75farid@gmail.com" class="text-primary-600 dark:text-primary-400 hover:underline">abdullah75farid@gmail.com</a></p>
+        <p class="text-gray-700 dark:text-gray-300">Phone: <a href="tel:+251949389828" class="text-primary-600 dark:text-primary-400 hover:underline">+251949389828</a></p>
+        <p class="text-gray-700 dark:text-gray-300">Location: Addis Ababa, Ethiopia</p>
+        <p class="text-gray-700 dark:text-gray-300">GitHub: <a href="https://github.com/abdullah75f" class="text-primary-600 dark:text-primary-400 hover:underline">github.com/abdullah75f</a></p>
+        <p class="text-gray-700 dark:text-gray-300">LinkedIn: <a href="https://linkedin.com/in/abdullah-75f" class="text-primary-600 dark:text-primary-400 hover:underline">linkedin.com/in/abdullah-75f</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <p>© 2025 Abdullah Farid. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Dark mode toggle
+    const toggleButton = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    toggleButton.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Load theme from localStorage
+    if (localStorage.getItem('theme') === 'dark') {
+      html.classList.add('dark');
+    }
+  </script>
+</body>
+</html> 
